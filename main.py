@@ -278,10 +278,7 @@ def get_nodes():
 
 @app.route('/cert', methods=['GET', 'POST'])
 def certitt():
-    a=wallet.kuchbhi()
-    print(a)
-    print(os.listdir('cert-8002'))
-    os.startfile(r"cert-{}\selfsigned.crt".format(a))
+    os.startfile('selfsigned.crt')
     # load_keys()
     return redirect('/node')
 
